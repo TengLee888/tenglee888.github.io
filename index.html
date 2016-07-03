@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html  lang="en" class=" js cssanimations">
+    <head>
+        <!--Unknown-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Teng's Adventure</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- maximum-scale也設為1，其實就是不讓使用者縮放，以維持頁面的設計，行動裝置專用的網頁常有必要這樣做。
+      user-scalable的實際行為就等於zoom，zoom=1可以配合行動版專用網頁的設定，剛剛好填滿畫面，不過桌機版網頁超出畫面是必然的
+      -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        
+        <link href="C:\Users\Teng\Documents\program\HTML&CSS\myWebSite\css\bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="C:\Users\Teng\Documents\program\HTML&CSS\myWebSite\css\style.css">
+        <script src="C:\Users\Teng\Documents\program\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\modernizr.custom.js"></script>
+        
+
+
+        
+
+    </head> 
+    <body>
+    	<header>
+<!--ref: https://teamtreehouse.com/community/how-to-use-affix-in-bootstrap-to-create-a-sticky-navigation-bar-css-preferred-->
+            <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                <!-- may try <div class="container-fluid"> -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <a href="file:///C:/Users/Teng/Documents/program/HTML&CSS/myWebSite/myWebSite.html" class="toggle-nav">
+                                <span class="sr-only">Toggle-navigation</span>
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </a>
+                        </button><a href="file:///C:/Users/Teng/Documents/program/HTML&CSS/myWebSite/myWebSite/" class="toggle-nav"></a>
+
+                        <a class="navbar-brand" href="#">李昱霆 | Teng Lee</a>
+                        </div>
+                        <!--<div class="navbar-collapse collapse"> 
+                        navbar-right repeat needed to delete-->
+                        <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a data-scroll="" href="#">HOME</a></li>
+                                <li class=""><a data-scroll="" href="#">ABOUT</a></li>
+                                <li class=""><a data-scroll="" href="#">PROFOLIO</a></li>
+                                <li class=""><a data-scroll="" href="#">CONTACT</a></li>
+                                <li class=""><a data-scroll="" href="#">RESUME</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+    	</header>
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* Intro  */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--remember container jumbotron z value is 0-->
+        <section class="jumbotron">
+            <!--<div class="black-overlay"></div>-->
+            <!--remember container valign z value is 2-->
+    		<div class="container valign">
+                <div class="row text-center">
+                    <h2>Teng's Adventure</h2>
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <p>Hi, I am Teng Lee. This is the place where introduce myself and my adventure.
+                        </p>
+                    </div>
+        	    </div>
+            </div>
+    	</section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* END Intro  */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* portfolio SECTION */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    	<section class="container">
+    		<div class="row">
+        	<figure class="col-sm-6">
+       			<p>kitchen</p>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg"/>
+        	</figure>
+        	<figure class="col-sm-6">
+      			<p>woodwork</p>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg"/>
+        	</figure>
+      	</div>
+      	<div class="row"> 
+        	<figure class="col-sm-6">
+       			<p>gifts</p>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg"/>
+        	</figure>
+        	<figure class="col-sm-6">
+      			<p>antiques</p>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg"/>
+        	</figure>
+      	</div>
+    	</section>
+
+<div class="col-md-8 col-md-offset-2 text-center">
+        <h2 data-scroll-reveal="enter top move over 1s after 0.2s" data-scroll-reveal-id="8" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                            <span>Contact</span>
+                        </h2>
+                        </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* contact SECTION */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section id="contact">
+            <div class="container">
+                <!--header-->
+                <div class="row sectionIntro">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 data-scroll-reveal="enter top move over 1s after 0.2s" data-scroll-reveal-id="8" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                            <span>Contact</span>
+                        </h2>
+                    </div>
+                </div>
+                <p>Please feel free to contact me for travel, for adventures, or something else.</p>
+                <div class="infoContact-layout">
+                    <ul class="infoContact">
+                        <li><i class="fa fa-smile-o"></i> Yit Teng Lee</li>
+                    </ul>
+                    <ul class="infoContact">
+                        <li><i class="fa fa-location-arrow"></i> Tainan</li>
+                    </ul>
+                    <ul class="infoContact">
+                        <li><i class="fa fa-envelope-o"></i> coffeealcohol@gmail.com</li>
+                    </ul>
+
+                    <ul class="infoContact">
+                        <li><i class="fa fa-phone"></i>  0912-022-744</li>
+                    </ul>
+
+                    <ul class="socialContact">
+                        <li><a class="fa fa-linkedin" href="https://www.linkedin.com/pub/yuan-yu-kristy-liao/1a/91/3b3"></a></li>
+                        <li><a class="fa fa-facebook" href="https://www.facebook.com/yuanyuankristy.liao"></a></li>
+                        <li><a class="fa fa-github" href="https://github.com/qqkristy"></a></li>
+                    </ul>
+
+
+                </div>
+                <!--end content-->
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* END contact SECTION */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+        <footer class="container">
+          	<div class="row">
+            	<p class="col-sm-4">&copy; 2016 Skillfair</p>
+            	<ul class="col-sm-8">
+            		<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+            	</ul>
+          	</div>
+    	</footer>
+        <script type="text/javascript" src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\js\scripts.js"></script>
+        <script type="text/javascript" src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\jquery.min.js"></script>
+        <script type="text/javascript" src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\scripts.js"></script>
+        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\preloader.js"></script>
+        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\js"></script>
+        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\overlay.js"></script> <!-- edit to add/remove oeverlay -->
+        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\custom.js"></script>
+
+        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\googleMapInit.js"></script>
+
+</body>
+</html>
