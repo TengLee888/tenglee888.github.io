@@ -14,8 +14,11 @@
         <link href="https://tenglee888.github.io/mywebsite/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- local/git-->
         <link rel="stylesheet" href="https://tenglee888.github.io/mywebsite/css/style.css">
+        <!-- dont know what for so far
         <script src="C:\Users\Teng\Documents\program\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\modernizr.custom.js"></script>
+        -->
         
 
 
@@ -23,49 +26,15 @@
 
     </head> 
     <body>
-    	<header>
-<!--ref: https://teamtreehouse.com/community/how-to-use-affix-in-bootstrap-to-create-a-sticky-navigation-bar-css-preferred-->
-            <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                <!-- may try <div class="container-fluid"> -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <a href="mywebsite/index.html" class="toggle-nav">
-                                <span class="sr-only">Toggle-navigation</span>
-                                <span class="top"></span>
-                                <span class="middle"></span>
-                                <span class="bottom"></span>
-                            </a>
-                        </button><a href="index.html" class="toggle-nav"></a>
-
-                        <a class="navbar-brand" href="#">李昱霆 | Teng Lee</a>
-                        </div>
-                        <!--<div class="navbar-collapse collapse"> 
-                        navbar-right repeat needed to delete-->
-                        <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a data-scroll="" href="#">HOME</a></li>
-                                <li class=""><a data-scroll="" href="#">ABOUT</a></li>
-                                <li class=""><a data-scroll="" href="#">PROFOLIO</a></li>
-                                <li class=""><a data-scroll="" href="#">CONTACT</a></li>
-                                <li class=""><a data-scroll="" href="#">RESUME</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-    	</header>
-
-
+    	
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--remember container jumbotron z value is 0-->
-        <section class="jumbotron">
+        <section id="intro">
             <!--<div class="black-overlay"></div>-->
             <!--remember container valign z value is 2-->
-    		<div class="container valign">
+    		<div class="jumbotron container valign">
                 <div class="row text-center">
                     <h2>Teng's Adventure</h2>
                     <div class="col-md-6 col-md-offset-3 text-center">
@@ -80,106 +49,123 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
-
-
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* portfolio SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    	<section class="container">
-    		<div class="row">
-        	<figure class="col-sm-6">
-       			<p>kitchen</p>
-            <img src="https://tenglee888.github.io/mywebsite/photo/Kitten.jpg"/>
-        	</figure>
-        	<figure class="col-sm-6">
-      			<p>woodwork</p>
-            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg"/>
-        	</figure>
-      	</div>
-      	<div class="row"> 
-        	<figure class="col-sm-6">
-       			<p>gifts</p>
-            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg"/>
-        	</figure>
-        	<figure class="col-sm-6">
-      			<p>antiques</p>
-            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg"/>
-        	</figure>
-      	</div>
-    	</section>
-
-<div class="col-md-8 col-md-offset-2 text-center">
-        <h2 data-scroll-reveal="enter top move over 1s after 0.2s" data-scroll-reveal-id="8" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-                            <span>Contact</span>
-                        </h2>
-                        </div>
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <!--/* contact SECTION */-->
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section id="contact">
-            <div class="container">
-                <!--header-->
-                <div class="row sectionIntro">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 data-scroll-reveal="enter top move over 1s after 0.2s" data-scroll-reveal-id="8" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-                            <span>Contact</span>
-                        </h2>
-                    </div>
+        <section id="profolio">
+            <div class="gallery">
+                <div class="gallery-inner">
+                
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kitten.JPG">
                 </div>
-                <p>Please feel free to contact me for travel, for adventures, or something else.</p>
-                <div class="infoContact-layout">
-                    <ul class="infoContact">
-                        <li><i class="fa fa-smile-o"></i> Yit Teng Lee</li>
-                    </ul>
-                    <ul class="infoContact">
-                        <li><i class="fa fa-location-arrow"></i> Tainan</li>
-                    </ul>
-                    <ul class="infoContact">
-                        <li><i class="fa fa-envelope-o"></i> coffeealcohol@gmail.com</li>
-                    </ul>
-
-                    <ul class="infoContact">
-                        <li><i class="fa fa-phone"></i>  0912-022-744</li>
-                    </ul>
-
-                    <ul class="socialContact">
-                        <li><a class="fa fa-linkedin" href="https://www.linkedin.com/pub/yuan-yu-kristy-liao/1a/91/3b3"></a></li>
-                        <li><a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=669078402"></a></li>
-                        <li><a class="fa fa-github" href="https://github.com/TengLee888"></a></li>
-                    </ul>
-
-
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/blueMosque.JPG">
                 </div>
-                <!--end content-->
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/ankaraSoldier.JPG">
+                </div>
+                <div class="gallery-inner">
+                
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/bangkok.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/cappadociaRock.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/coffeeRelax.JPG">
+                </div>
+                <div class="gallery-inner">
+                
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/costGeisha.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/konyaDance.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/nanzenjiTample.JPG">
+                </div>
+                <div class="gallery-inner">
+                
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/olympic.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/riaClassic.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/safranboluSunRise.JPG">
+                </div>
+                <div class="gallery-inner">
+                
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/saihojiTample.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/westHanganji.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/yasakajinjaTample.JPG">
+                </div>
+                <div class="gallery-inner">
+                    
+                    <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/sanctaSophia.JPG">
+                </div>
             </div>
         </section>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <!--/* END contact SECTION */-->
+        <!--/* END profolio SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* about SECTION */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section id="about">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3>
+                        <!-- data-scroll-reveal="enter top move 10px over 1s after 0.2s" data-scroll-reveal-id="6" style="-webkit-transform: translatey(-10px);transform: translatey(-10px);opacity: 0;" data-scroll-reveal-initialized="true"-->
+                            <span>About</span>
+                        </h3>
+                        <img src="https://tenglee888.github.io/mywebsite/photo/profilePhoto2.jpg" " style="width: 20%;display: inline-block; padding-top: 30px;">
+                         <!--style="width: 20%;display: run-in; padding-top: 15px;">-->
+                        <p> 
+                        <!--data-scroll-reveal="enter bottom move 10px over 1s after 0.2s" data-scroll-reveal-id="7" style="-webkit-transform: translatey(10px);transform: translatey(10px);opacity: 0;" data-scroll-reveal-initialized="true">-->
+                            
+                            I got birth in Malaysia and graduated from National Taiwan University which is the top university in Taiwan. I majored in Agricultural Chemistry enabling me not only the knowledge of chemistry and biotechnology but an effective and logical concept from more than 200 experiments. In fact, I am highly interested and passionate in business and therefore took several subjects such as Macroeconomics, Investment, Money & Banking, and etc. With both Chemical and Business background, comparing to the other candidates, I am capable with thinking differently.
+                            <br>
+                            <br>
+                            I served as the president of NTU Ballroom Dancing Club which had about 200 members. When I was a chairman, our team made a most-member record that hasn’t been broken yet. Within 3 years in dance-teaching group and almost 100 teaching classes; moreover 1 year as a president and held many performances and activities, all these experiences had been strengthen my skill of administration, problem-solving and negotiation. Furthermore, I learned something essential for a team-leader as team-player are optimistic, courage, listening.
+                            <br>
+                            <br>
+                                “I have done something that most people can’t do!” 
+                            This was what I told myself as achieving my first 42km marathon. “Marathon is the perfect distance to truly test the human physiology and spirit,” said Frank Shorter, the gold medal in the Olympic marathon. This saying indicates that Persistence is the key to goal and it is what I temper for. 
+                            <br>
+                            <br>
+                            Being a chairman, achieving marathons, what I do is that I believe in CHALLENGEING THE QUO.
+                        </p>
 
+                    </div>
+                </div>
+            </div>
+        </section>
 
+    <script>
+        $.backstretch('https://tenglee888.github.io/mywebsite/photo/beauty1.jpg');
+    </script>
 
+    <div class="backstretch">
+        <img src="https://tenglee888.github.io/mywebsite/photo/beauty1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: auto; height: 80%; z-index: -999; left: 0px; top: 0px;">
+    </div>    
 
-        <footer class="container">
-          	<div class="row">
-            	<p class="col-sm-4">&copy; 2016 Skillfair</p>
-            	<ul class="col-sm-8">
-            		<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
-          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
-          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
-          			<li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
-            	</ul>
-          	</div>
-    	</footer>
-        <script type="text/javascript" src="https://tenglee888.github.io/mywebsite/js/scripts.js"></script>
-        <script type="text/javascript" src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\jquery.min.js"></script>
-        <script type="text/javascript" src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\scripts.js"></script>
-        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\preloader.js"></script>
-        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\js"></script>
-        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\overlay.js"></script> <!-- edit to add/remove oeverlay -->
-        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\custom.js"></script>
-
-        <script src="C:\Users\Teng\Desktop\HTML&CSS\myWebSite\yuanDesign\元 _ Yuan-Yu Krsity Liao's Design Journey and Life Adventures_files\googleMapInit.js"></script>
+        
+ 
 
 </body>
 </html>
