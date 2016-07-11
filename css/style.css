@@ -23,9 +23,6 @@ body {
     transform: translateY(-50%);
 }
 
-section{
-    position: relative;
-}
 
 
 
@@ -34,7 +31,27 @@ section{
     position: relative;
 }
 
+
+.section-title{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position:relative;
+}
+
+
+
 /*TEXT STYLES*/
+
+
+span{
+    padding: 10px 50px;
+    border: solid 1px #000000;
+    font-weight: 300;
+    font-size: 30;
+    color: #4c4c4c;
+    
+}
+
 
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
@@ -90,21 +107,29 @@ section{
 
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*<!--Portfolio -->*/
+/*<!--Gallery -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
+/*
+#gallery {
+    display: block;
+    position: relative;
+    background:white;
+}
+*/
 
-.gallery {
-	position:relative;
-  	left:0;
-  	top:0;
+
+#gallery {
+    position:relative;
+    left:0;
+    top:0;
     max-width: 100%;
     background:white;
     height: 2000px;
     display: block;
 }
-
+/*
 .gallery-inner
-/*.gallery .grid-sizer */{
+.gallery .grid-sizer {
     width: 50%;
     float: left;
     height: auto;
@@ -121,6 +146,62 @@ section{
     width: 100%;
     height: auto;
 }
+*/
+
+
+#gallery .container{
+    height: 200px;
+}
+
+
+/*----- 
+ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive  
+---*/
+
+.galleryImage {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+}
+
+
+.galleryImage:hover {
+    /*pending*/
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.responsive {
+    padding:6px;
+    float: left;
+    width: 49.99%;
+}
+
+
+@media only screen and (max-width: 500px){
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--About -->*/
@@ -132,15 +213,6 @@ section{
 
 #about .container{
     padding-top:200px;
-}
-
-
-#about span{
-    padding: 10px 50px;
-    border: solid 1px #000000;
-    font-weight: 300;
-    font-size: 30;
-    color: #4c4c4c;
 }
 
 
