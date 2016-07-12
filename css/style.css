@@ -13,6 +13,11 @@ body {
 
 }
 
+section {
+    position:relative;
+}
+
+
 .valign{
     position: relative;
     top: 50%;
@@ -24,32 +29,56 @@ body {
 }
 
 
-
-
-
-.container {
-    position: relative;
-}
-
-
-.section-title{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    position:relative;
+h3 span{
+    padding: 10px 50px;
+    border: solid 1px #000000;
 }
 
 
 
 /*TEXT STYLES*/
 
+#intro h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
 
-span{
-    padding: 10px 50px;
-    border: solid 1px #000000;
+
+h3 {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 15px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+
+p {
+    color: #fff;
+    font-size:15px;    /*can't apply?*/
+    font-weight: 300;  /*can't apply?*/
+    line-height: 25px
+}
+
+
+#about p {
+    margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 30;
+    font-size: 15px;
+    line-height: 24px;
     color: #4c4c4c;
-    
+    text-align: left;
+    padding: 0 50px;
 }
 
 
@@ -57,7 +86,9 @@ span{
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--background -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-.backstretch{
+
+
+.backstretch {
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -70,96 +101,62 @@ span{
 }
 
 
-
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--Intro -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#intro{
-	display: block;
-	position: relative;
+
+#intro {
 	height: 80%
 }
 
-.jumbotron{
+
+.jumbotron {
     background-color:rgba(0, 0, 0, 0);
-}
-
-
-.text-center h2{
-    font-size: 60px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-    letter-spacing: 0px;
-    text-transform:none
-}
-
-
-.text-center h3 {
-    margin: 0 0 20px;
-    color: #fff;
-}
-
-.text-center p {
-    color: #fff;
 }
 
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--Gallery -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*
+
+
 #gallery {
-    display: block;
-    position: relative;
     background:white;
+    padding-top:60px;
+    height: auto;
 }
-*/
 
 
-#gallery {
-    position:relative;
-    left:0;
-    top:0;
+.gallery-wall {
+    position: relative;
+    padding-top:20px;	
+  /*change!!!*/
     max-width: 100%;
-    background:white;
-    height: 2000px;
-    display: block;
-}
-/*
-.gallery-inner
-.gallery .grid-sizer {
-    width: 50%;
-    float: left;
-    height: auto;
-    background: #4c4c4c;
-    /*position: absolute;*/
-    left: 0;
-    top: 0;
-    margin:0;
-    display: block;
-    position: relative;
 }
 
-.galleryImage{
-    width: 100%;
-    height: auto;
-}
-*/
-
-
-#gallery .container{
-    height: 200px;
-}
 
 
 /*----- 
 ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive  
 ---*/
 
+
+.gallery-item {
+    float: left;
+    position: relative;
+    left:0;
+    top:0;
+    margin:0;
+    height:auto;
+    width: 49.99%;
+    padding:6px;
+    z-index: 2;
+}
+
+
+
 .galleryImage {
-    border: 1px solid #ccc;
     width: 100%;
     height: auto;
 }
@@ -170,27 +167,8 @@ ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_respon
 }
 
 
-.gallery-item img {
-    width: 100%;
-    height: auto;
-}
 
-
-
-* {
-    box-sizing: border-box;
-}
-
-
-
-.responsive {
-    padding:6px;
-    float: left;
-    width: 49.99%;
-}
-
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
     .gallery-item {
         width: 100%;
     }
@@ -211,17 +189,4 @@ ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_respon
     background-color: white;
 }
 
-#about .container{
-    padding-top:200px;
-}
 
-
-#about p{
-    margin-top:20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
-    color: #4c4c4c;
-    text-align: left;
-}
