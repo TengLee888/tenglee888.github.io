@@ -1,49 +1,17 @@
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    /* Isotope */
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    var $container = $('.gallery').imagesLoaded( function() {
-        $container.isotope({
-            // options
-        });
-    });
+$(document).ready(function() {
 
+$.backstretch('https://tenglee888.github.io/mywebsite/photo/beauty1.jpg');
+/*
+ * Here is an example of how to use Backstretch as a slideshow.
+ * Just pass in an array of images, and optionally a duration and fade value.
+ */
 
-    $('#filters').on( 'click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
-        $container.isotope({ filter: filterValue });
-    });
-
-    $container.isotope({
-        filter: '*' // IF YOU WANT TO DISPLAY AT FIRST ONLY ONE FILTER, FOR EXAMPLE DESIGNS: SUBSTIUTE '*' WITH '.designs'
-    });
-
-
-    //    masonry 3 columns
-    $( function() {
-        var $container2 = $('.blogPostsWrapper');
-        // initialize Masonry after all images have loaded
-        $container2.imagesLoaded(function () {
-            $container2.isotope({
-                itemSelector: '.blogPost',
-                masonry: {
-                    columnWidth: '.grid-sizer-blog-3'
-                }
-            });
-        });
-    });
-
-
-    //    masonry 2 columns
-    $( function() {
-        var $container3 = $('.blogPostsWrapper2');
-        // initialize Masonry after all images have loaded
-        $container3.imagesLoaded(function () {
-            $container3.isotope({
-                itemSelector: '.blogPost2',
-                masonry: {
-                    columnWidth: '.grid-sizer-blog-2'
-                }
-            });
-        });
-    });
-
+  // Duration is the amount of time in between slides,
+  // and fade is value that determines how quickly the next image will fade in
+/* $.backstretch([
+      "http://dl.dropbox.com/u/515046/www/outside.jpg"
+    , "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg"
+    , "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+  ], {duration: 3000, fade: 750});
+*/
+}
