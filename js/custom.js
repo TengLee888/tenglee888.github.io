@@ -1,17 +1,11 @@
 $(document).ready(function() {
 
-$.backstretch('https://tenglee888.github.io/mywebsite/photo/beauty1.jpg');
-/*
- * Here is an example of how to use Backstretch as a slideshow.
- * Just pass in an array of images, and optionally a duration and fade value.
- */
-
-  // Duration is the amount of time in between slides,
-  // and fade is value that determines how quickly the next image will fade in
-/* $.backstretch([
-      "http://dl.dropbox.com/u/515046/www/outside.jpg"
-    , "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg"
-    , "http://dl.dropbox.com/u/515046/www/cheers.jpg"
-  ], {duration: 3000, fade: 750});
-*/
-}
+$.backstretch([
+    "https://tenglee888.github.io/mywebsite/photo/beauty1.jpg"
+    , "https://tenglee888.github.io/mywebsite/photo/cappadociaWide.JPG"
+    , "https://tenglee888.github.io/mywebsite/photo/riaSunSetWide.JPG"
+    , "https://tenglee888.github.io/mywebsite/photo/mountainWide.JPG"
+    ], {duration: 3000, fade: 750} );
+    // Duration is the amount of time in between slides,
+    // and fade is value that determines how quickly the next image will fade in
+});
