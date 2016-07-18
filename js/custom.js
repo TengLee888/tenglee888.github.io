@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* Backstretch  */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$.backstretch([
 	    "https://tenglee888.github.io/mywebsite/photo/cappadociaWide.JPG"
 	    , "https://tenglee888.github.io/mywebsite/photo/riaSunSetWide.JPG"
@@ -8,9 +11,15 @@ $(document).ready(function() {
 	    // Duration is the amount of time in between slides,
 	    // and fade is value that determines how quickly the next image will fade in
 
+
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* For Navigation Bar  */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$('#navbar').scrollspy()
 	$('[data-spy="scroll"]').each(function () {
   		var $spy = $(this).scrollspy('refresh')
 	});
 
 });
+
+
