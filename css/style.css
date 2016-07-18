@@ -44,6 +44,11 @@ h3 span{
     border: solid 1px #000000;
 }
 
+
+
+
+
+
 /*NAVBAR */
 
 /*
@@ -340,19 +345,18 @@ p {
 /*<!--background -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-
+/*
 .backstretch {
-    height: 70%;
-    width: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-    margin: 0px; 
-    padding: 0px; 
-    z-index: -999; 
-    position: fixed;
+    width: 100%;
+    height: 85% !important;
+}
+*/
+
+
+@media (min-width:800px) {
+    .backstretch {
+        height: 85% !important;
+    }
 }
 
 
@@ -372,12 +376,12 @@ p {
 
 .valign{
     position: relative;
-    top: 70%;
-    -webkit-transform: translateY(-70%);
-    -ms-transform: translateY(-70%);
-    -moz-transform: translateY(-70%);
-    -o-transform: translateY(-70%);
-    transform: translateY(-70%);
+    top: 60%;
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    transform: translateY(-60%);
 }
 
 
