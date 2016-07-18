@@ -342,6 +342,8 @@ p {
 
 
 .backstretch {
+    height: 70%;
+    width: auto;
     top: 0;
     left: 0;
     bottom: 0;
@@ -393,11 +395,21 @@ p {
 }
 
 
+#gallery .container {
+    padding: 0 6px;
+    width: 100%;
+
+}
+
+
 .gallery-wall {
     position: relative;
     padding-top:20px;   
     max-width: 100%;
 }
+
+
+
 
 
 
@@ -413,7 +425,7 @@ ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_respon
     top:0;
     margin:0;
     height:auto;
-    width: 49.99%;
+    width: 25%;
     padding:6px;
     z-index: 2;
 }
@@ -432,6 +444,13 @@ ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_respon
 
 
 
+@media only screen and (max-width: 1000px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+
 @media only screen and (max-width: 500px) {
     .gallery-item {
         width: 100%;
@@ -443,6 +462,19 @@ ref: http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_respon
     display: table;
     clear: both;
 }
+
+
+
+
+/*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
+/*<!--About -->*/
+/*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
+
+#about p {
+    text-align: justify;
+}
+
+
 
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
