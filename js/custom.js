@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Backstretch  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$.backstretch([
@@ -13,12 +14,31 @@ $(document).ready(function() {
 
 
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    /* For Navigation Bar  */
+    /* Navigation Bar  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$('#navbar').scrollspy()
 	$('[data-spy="scroll"]').each(function () {
   		var $spy = $(this).scrollspy('refresh')
 	});
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* Scroll Reveal  */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    var iconReveal = {
+	    duration: 5000,
+	    origin: 'left',
+	    distance: '100px',
+	    delay: 5000,
+	};
+
+
+
+    window.sr = ScrollReveal();
+	sr.reveal('.icon', iconReveal);
+
+
+   
 
 });
 
