@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html  lang="en" class=" js cssanimations">
     <head>
-        <!--Unknown-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Teng's Adventure</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="https://tenglee888.github.io/mywebsite/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://tenglee888.github.io/mywebsite/js/bootstrap.min.js"></script>
+        <script src="https://tenglee888.github.io/mywebsite/js/scrollreveal.min.js"></script>
 
         <!-- css  -->
         <!-- ******************style.css************************* -->
@@ -34,9 +34,9 @@
         <!-- GITHUB    -->
         <script type="text/javascript" src="https://tenglee888.github.io/mywebsite/js/scripts.js"></script>
 
-        <!--  House  
+        <!--  House   
         <script type="text/javascript" src="C:\Users\Teng\Documents\GitHub\mywebsite\js\scripts.js"></script>
-     -->   
+-->       
 
         <!-- *********************custom.js************************* -->
         <!-- GITHUB -->
@@ -88,7 +88,6 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <!--remember container jumbotron z value is 0-->
         <section id="intro">
             <!--<div class="black-overlay"></div>-->
             <!--remember container valign z value is 2-->
@@ -114,93 +113,104 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="gallery">
             <div class="container">
-            <div class="row section-title">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3>
-                        <!-- data-scroll-reveal="enter top move 10px over 1s after 0.2s" data-scroll-reveal-id="6" style="-webkit-transform: translatey(-10px);transform: translatey(-10px);opacity: 0;" data-scroll-reveal-initialized="true"-->
-                        <span>Gallery</span>
-                    </h3>
-            </div>
-            </div>
-                <div class="gallery-wall">
-                    <div class="gallery-item responsive">
-                    
+                <div class="row section-title">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3>
+                            <span>Gallery</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-group filter-button-group">
+                    <button class="button is-checked" data-filter="*">show all</button>
+                    <button class="button" data-filter=".malaysia">malaysia</button>
+                    <button class="button" data-filter=".thailand">thailand</button>
+                    <button class="button" data-filter=".japan">japan</button>
+                    <button class="button" data-filter=".turkey">turkey</button>
+                    <button class="button" data-filter=".greece">greece</button>
+                    <button class="button" data-filter=".building">building</button>
+                    <button class="button" data-filter=".people">people</button>
+                    <button class="button" data-filter=".scenery">scenery</button>
+                    <button class="button" data-filter=".animal">animal</button>
+                    <button class="button" data-filter=".food">food</button>
+                </div>
+                <div class="gallery-wall grid">
+                    <div class="gallery-item responsive element-item turkey animal" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kitten.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey building" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/blueMosque.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey people" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/ankaraSoldier.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                    
+
+                    <div class="gallery-item responsive element-item thailand building" data-category="thailand">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/BangkokStatue.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey scenery" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/cappadociaRock.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item thailand food" data-category="thailand">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/coffeeRelax.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                    
+
+                    <div class="gallery-item responsive element-item japan people" data-category="japan">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/costGeisha.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey people" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/konyaDance.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item thailand building" data-category="thailand">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/bangkokPalace.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item japan building" data-category="japan">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/nanzenjiTample.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                    
+
+                    <div class="gallery-item responsive element-item greece building" data-category="greece">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/olympic.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item greece scenery" data-category="greece">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/riaClassic.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item malaysia scenery" data-category="malaysia">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kuaTemburong.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey scenery" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/safranboluSunRise.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                    
+
+                    <div class="gallery-item responsive element-item japan building" data-category="japan">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/saihojiTample.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item thailand building" data-category="thailand">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/ChiangMaiTemple.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item japan building" data-category="japan">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/westHanganji.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item malaysia scenery" data-category="malaysia">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/redangBeach.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item japan building" data-category="japan">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/yasakajinjaTample.JPG">
                     </div>
-                    <div class="gallery-item responsive">
-                        
+
+                    <div class="gallery-item responsive element-item turkey building" data-category="turkey">
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/sanctaSophia.JPG">
                     </div>
                 </div>
@@ -214,19 +224,16 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="about">
             <div class="container">
-                <div class="row section-title">
-                    <div class="col-md-8 col-md-offset-2 text-center">     
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="row section-title">     
                         <h3>
-                            <!-- data-scroll-reveal="enter top move 10px over 1s after 0.2s" data-scroll-reveal-id="6" style="-webkit-transform: translatey(-10px);transform: translatey(-10px);opacity: 0;" data-scroll-reveal-initialized="true"-->
                             <span>About</span>
                         </h3>
+                    </div>
             
                 
-                        <img src="https://tenglee888.github.io/mywebsite/photo/profilePhoto2.jpg" " style="width: 20%;display: inline-block; padding-top: 30px;">
-                        <!--style="width: 20%;display: run-in; padding-top: 15px;">-->
-                        <p> 
-                            <!--data-scroll-reveal="enter bottom move 10px over 1s after 0.2s" data-scroll-reveal-id="7" style="-webkit-transform: translatey(10px);transform: translatey(10px);opacity: 0;" data-scroll-reveal-initialized="true">-->
-                                
+                    <img src="https://tenglee888.github.io/mywebsite/photo/profilePhoto2.jpg">
+                    <p  class="aboutReveal"> 
                             I got birth in Malaysia and graduated from National Taiwan University which is the top university in Taiwan. I majored in Agricultural Chemistry enabling me not only the knowledge of chemistry and biotechnology but an effective and logical concept from more than 200 experiments. In fact, I am highly interested and passionate in business and therefore took several subjects such as Macroeconomics, Investment, Money & Banking, and etc. With both Chemical and Business background, comparing to the other candidates, I am capable with thinking differently.
                             <br>
                             <br>
@@ -238,8 +245,7 @@
                             <br>
                             <br>
                             Being a chairman, achieving marathons, what I do is that I believe in CHALLENGEING THE QUO.
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>
@@ -256,7 +262,6 @@
                 <div class="row section-title">
                     <div class="col-md-8 col-md-offset-2 text-center"> 
                         <h3>
-                            <!-- data-scroll-reveal="enter top move over 1s after 0.2s" data-scroll-reveal-id="8" style="-webkit-transform: translatey(-over);transform: translatey(-over);opacity: 0;" data-scroll-reveal-initialized="true"-->
                             <span>Contact</span>
                         </h3>
                     </div>
@@ -264,23 +269,27 @@
                 <p>Please feel free to contact me travelling, backpacking, mountain trekking or anything else.</p>
                 <div class="infoContact-layout">
                     <ul class="infoContact">
-                        <li><i class="fa fa-smile-o"></i> Teng Lee</li>
-                    </ul>
-                    <ul class="infoContact">
-                        <li><i class="fa fa-location-arrow"></i> Tainan, Taiwan</li>
-                    </ul>
-                    <ul class="infoContact">
-                        <li><i class="fa fa-envelope-o"></i> coffeealcohol@gmail.com</li>
+                        <li><img class="icon" src="https://tenglee888.github.io/mywebsite/photo/user-3.png"> Teng Lee</li>
                     </ul>
 
                     <ul class="infoContact">
-                        <li><i class="fa fa-phone"></i>  +886-912-022-744</li>
+                        <li><img class="icon" src="https://tenglee888.github.io/mywebsite/photo/placeholder-2.png"> Tainan, Taiwan</li>
+                    </ul>
+
+                    <ul class="infoContact">
+                        <li><img class="icon" src="https://tenglee888.github.io/mywebsite/photo/envelope.png"> coffeealcohol@gmail.com</li>
+                    </ul>
+
+                    <ul class="infoContact">
+                        <li><img class="icon" src="https://tenglee888.github.io/mywebsite/photo/mobile-phone.png">  +886-912-022-744</li>
                     </ul>
 
                     <ul class="socialContact">
-                        <li><a class="icon" href="https://www.linkedin.com/nhome"><img src="https://tenglee888.github.io/mywebsite/photo/linkedin.png"></a></li>
-                        <li><a class="icon" href="https://www.facebook.com"><img src="https://tenglee888.github.io/mywebsite/photo/facebook.png"></a></li>
-                        <li><a class="icon" href="https://github.com/TengLee888"><img src="https://tenglee888.github.io/mywebsite/photo/github.png"></a></li>
+                        <li><a href="https://www.linkedin.com/nhome"><img class="icon" src="https://tenglee888.github.io/mywebsite/photo/linkedin.png"></a></li>
+
+                        <li><a href="https://www.facebook.com"><img class="icon" id="iconTwo" src="https://tenglee888.github.io/mywebsite/photo/facebook.png"></a></li>
+
+                        <li><a href="https://github.com/TengLee888"><img class="icon" id="iconThree" src="https://tenglee888.github.io/mywebsite/photo/github.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -306,12 +315,6 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* END Footer SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
-        <script>
-            sr.reveal('.galleryImage',  { container: '.gallery-wall' });
-            sr.reveal('.icon',  { container: '.socialContact' });
-
-        </script>
--->
+        
     </body>
 </html>
