@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Backstretch  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$.backstretch([
@@ -102,7 +101,8 @@ $(document).ready(function() {
 		distance : '10px',
 		duration : 1000,
 		delay	 : 200,
-		easing   : 'ease-in-out'
+		easing   : 'ease-in-out',
+		mobile	 :false
 	};
 
 	var contactReveal = {
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 
 	window.sr = ScrollReveal();
-	sr.reveal('.section-title' /*{ reset: true }*/);
+	sr.reveal('.section-title', { reset: true});
 	sr.reveal('.aboutReveal', aboutReveal);
 	sr.reveal('.infoContact', contactReveal);
 	sr.reveal('.icon', iconReveal);
@@ -134,5 +134,4 @@ $(document).ready(function() {
 
 
 });
-
 
