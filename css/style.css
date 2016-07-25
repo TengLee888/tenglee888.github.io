@@ -112,6 +112,11 @@ p {
         text-transform: uppercase;
         letter-spacing: 4px;
     }
+
+    p {
+	padding: 0;
+    }
+
 }
 
 
