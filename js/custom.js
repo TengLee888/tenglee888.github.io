@@ -93,7 +93,7 @@ $(document).ready(function() {
 */
 	
 	
-   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Scroll Reveal  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     var aboutReveal = {
@@ -133,5 +133,20 @@ $(document).ready(function() {
 	sr.reveal('#iconThree', {delay: 600 });
 
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* Icon Animate  */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+    $(".socialContact .icon").hover(function(){
+        $(this).animate({top: "-8px"});
+    },function(){
+        $(this).animate({top: "0px"});
+    });
+
 });
+
+
+
+
 
