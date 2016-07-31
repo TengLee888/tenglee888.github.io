@@ -5,10 +5,10 @@
         <title>Teng's Adventure</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	
+    
 
         <!-- Font -->
-	    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
 
 
 
@@ -23,36 +23,18 @@
 
         <!-- css  -->
         <!-- ******************style.css************************* -->
-        <!-- GITHUB   -->
+        <!-- GITHUB   
         <link rel="stylesheet" type="text/css" href="https://tenglee888.github.io/mywebsite/css/style.css">
-
-
-        <!--  House  
-        <link rel="stylesheet" type="text/css" href="C:\Users\Teng\Documents\GitHub\mywebsite\css\style.css">
 -->
+
+        <!--  House  -->
+        <link rel="stylesheet" type="text/css" href="C:\Users\Teng\Documents\GitHub\mywebsite\css\style.css">
+
 
         <!-- Company  
         <link rel="stylesheet" type="text/css" href="C:\Users\teng.lee\Desktop\style.css">
 -->
         <!-- ****************End  style.css********************* -->
-
-
-
-
-	<!-- ******************responsive.css************************* -->
-        <!-- GITHUB   
-        <link rel="stylesheet" type="text/css" href="https://tenglee888.github.io/mywebsite/css/responsive.css">
--->
-
-        <!--  House  
-        <link rel="stylesheet" type="text/css" href="C:\Users\Teng\Documents\GitHub\mywebsite\css\responsive.css">
--->
-
-        <!-- Company  
-        <link rel="stylesheet" type="text/css" href="C:\Users\teng.lee\Desktop\responsive.css">
--->
-        <!-- ****************End  responsive.css********************* -->
-
 
 
 
@@ -64,28 +46,26 @@
         <!--  House   
         <script type="text/javascript" src="C:\Users\Teng\Documents\GitHub\mywebsite\js\scripts.js"></script>
 -->       
-	<!-- *****************End  scripts.js************************* -->
-
+    <!-- *****************End  scripts.js************************* -->
 
 
 
         <!-- *********************custom.js************************* -->
-        <!-- GITHUB -->
+        <!-- GITHUB 
         <script src="https://tenglee888.github.io/mywebsite/js/custom.js"></script>
-
-
-        <!--  House  
-        <script src="C:\Users\Teng\Documents\GitHub\mywebsite\js\custom.js"></script>
 -->
 
+        <!--  House  -->
+        <script src="C:\Users\Teng\Documents\GitHub\mywebsite\js\custom.js"></script>
 
-	<!--  Company  
+
+
+    <!--  Company  
         <script src="C:\Users\teng.lee\Desktop\custom.js"></script>
 -->
-	<!-- *****************End  custom.js************************* -->
+    <!-- *****************End  custom.js************************* -->
 
     </head> 
-
 
 
 
@@ -123,12 +103,12 @@
         </div>
         </header>
 
+
+
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="intro">
-            <!--<div class="black-overlay"></div>-->
-            <!--remember container valign z value is 2-->
             <div class="jumbotron container valign">
                 <div class="row text-center">
                     <div class="col-md-12 text-center">
@@ -158,101 +138,206 @@
                         </h2>
                     </div>
                 </div>
-<!--
-                <div class="button-group filter-button-group">
+
+                <div class="button-group filters-button-group">
                     <button class="button is-checked" data-filter="*">show all</button>
-                    <button class="button" data-filter=".malaysia">malaysia</button>
-                    <button class="button" data-filter=".thailand">thailand</button>
+                    <button class="button" data-filter=".turkey">
+                    turkey</button>
                     <button class="button" data-filter=".japan">japan</button>
-                    <button class="button" data-filter=".turkey">turkey</button>
                     <button class="button" data-filter=".greece">greece</button>
-                    <button class="button" data-filter=".building">building</button>
+                    <button class="button" data-filter=".thailand">thailand</button>
+                    <button class="button" data-filter=".malaysia">malaysia</button>                
                     <button class="button" data-filter=".people">people</button>
-                    <button class="button" data-filter=".scenery">scenery</button>
                     <button class="button" data-filter=".animal">animal</button>
                     <button class="button" data-filter=".food">food</button>
+                    <button class="button" data-filter=".scenery">scenery</button>
+                    <button class="button" data-filter=".building">building</button>
                 </div>
--->
+                <!-- Image Popup  -->
+                <div id="myModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
                 <div class="gallery-wall grid">
                     <div class="gallery-item responsive element-item turkey animal" data-category="turkey">
-			<div class="caption text-center ">
-                        <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kitten.JPG">
-			</div>
+                        <!--<div class="overlay">
+                            <div class="imageTxt">
+                                <p>Cats, Cappadocia</p>
+                            </div>
+                        </div>-->
+                        <img id="myImg" class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kitten.JPG" alt="Cats, Cappadocia">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey building" data-category="turkey">
-                        <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/blueMosque.JPG">
+                        <!--<div class="overlay">
+                            <div class="imageTxt">
+                                <p>Blue Mosque, Istanbul</p>
+                            </div>
+                        </div>-->
+                        <img id="myImg" alt="Blue Mosque, Istanbul" class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/blueMosque.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey people" data-category="turkey">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Soldier in Momentus, Ankara</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/ankaraSoldier.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item thailand building" data-category="thailand">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Grand Palace, Bangkok</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/BangkokStatue.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey scenery" data-category="turkey">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Geography in Göreme</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/cappadociaRock.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item thailand food" data-category="thailand">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>6th in World Latte Art Championship, Chiang Mai</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/coffeeRelax.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item japan people" data-category="japan">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Koyto</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/costGeisha.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey people" data-category="turkey">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Sema, Konya</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/konyaDance.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item thailand building" data-category="thailand">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Grand Palace, Bangkok</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/bangkokPalace.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item japan building" data-category="japan">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Nan Zen Ji Temple 南禪寺, Kyoto</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/nanzenjiTample.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item greece building" data-category="greece">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Olympic Stadium, Athen</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/olympic.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item greece scenery" data-category="greece">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Santorini</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/riaClassic.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item malaysia scenery" data-category="malaysia">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Gua Tempurong Cave, Perak</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/kuaTemburong.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey scenery" data-category="turkey">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Sun rise, Safranbolu</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/safranboluSunRise.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item japan building" data-category="japan">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Saiho Ji Temple 苔寺, Kyoto</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/saihojiTample.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item thailand building" data-category="thailand">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Mural, Chiang Mai</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/ChiangMaiTemple.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item japan building" data-category="japan">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Nishihonganji 西本願寺, Kyoto</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/westHanganji.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item malaysia scenery" data-category="malaysia">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Redang Island</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/redangBeach.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item japan building" data-category="japan">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Yasaka Jinja 八坂神社, Kyoto</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/yasakajinjaTample.JPG">
                     </div>
 
                     <div class="gallery-item responsive element-item turkey building" data-category="turkey">
+                        <div class="overlay">
+                            <div class="imageTxt">
+                                <p>Sancta Sophia, Istanbul</p>
+                            </div>
+                        </div>
                         <img class="galleryImage" src="https://tenglee888.github.io/mywebsite/photo/sanctaSophia.JPG">
                     </div>
                 </div>
@@ -261,6 +346,9 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* END Gallery SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* About SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -294,6 +382,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* End About SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -339,6 +428,8 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* END Contact SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Footer SECTION */-->
