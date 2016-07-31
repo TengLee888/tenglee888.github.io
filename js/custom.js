@@ -13,6 +13,7 @@ $(document).ready(function() {
 	    // and fade is value that determines how quickly the next image will fade in
 
 
+
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Navigation Bar  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -22,77 +23,48 @@ $(document).ready(function() {
 	});
 
 
+
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Isotope  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*
-	// external js: isotope.pkgd.js
-
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.element-item',
-	  layoutMode: 'fitRows'
+	$(window).load(function() {
+		// init Isotope
+		var $grid = $('.grid').isotope({
+		  itemSelector: '.element-item',
+		  layoutMode: 'fitRows'
+		});
+		// filter functions
+		var filterFns = {
+		  // show if number is greater than 50
+		  numberGreaterThan50: function() {
+		    var number = $(this).find('.number').text();
+		    return parseInt( number, 10 ) > 50;
+		  },
+		  // show if name ends with -ium
+		  ium: function() {
+		    var name = $(this).find('.name').text();
+		    return name.match( /ium$/ );
+		  }
+		};
+		// bind filter button click
+		$('.filters-button-group').on( 'click', 'button', function() {
+		  var filterValue = $( this ).attr('data-filter');
+		  // use filterFn if matches value
+		  filterValue = filterFns[ filterValue ] || filterValue;
+		  $grid.isotope({ filter: filterValue });
+		});
+		// change is-checked class on buttons
+		$('.button-group').each( function( i, buttonGroup ) {
+		  var $buttonGroup = $( buttonGroup );
+		  $buttonGroup.on( 'click', 'button', function() {
+		    $buttonGroup.find('.is-checked').removeClass('is-checked');
+		    $( this ).addClass('is-checked');
+		  });
+		});
 	});
-	// filter functions
-	var filterFns = {
-	  
-	};
-
-
-	// bind filter button click
-	$('.filters-button-group').on( 'click', 'button', function() {
-	  var filterValue = $( this ).attr('data-filter');
-	  // use filterFn if matches value
-	  filterValue = filterFns[ filterValue ] || filterValue;
-	  $grid.isotope({ filter: filterValue });
-	});
-	// change is-checked class on buttons
-	$('.button-group').each( function( i, buttonGroup ) {
-	  var $buttonGroup = $( buttonGroup );
-	  $buttonGroup.on( 'click', 'button', function() {
-	    $buttonGroup.find('.is-checked').removeClass('is-checked');
-	    $( this ).addClass('is-checked');
-	  });
-	});
-*/
-
-
-/*
-	// filter .malaysia
-	$grid.isotope({ filter: '.malaysia' });
-
-	// filter .thailand
-	$grid.isotope({ filter: '.thailand' });
-
-	// filter .japan
-	$grid.isotope({ filter: '.japan' });
-
-	// filter .turkey
-	$grid.isotope({ filter: '.turkey' });
-
-	// filter .greece
-	$grid.isotope({ filter: '.greece' });
-
-	// filter .building
-	$grid.isotope({ filter: '.building' });
-
-	// filter .people
-	$grid.isotope({ filter: '.people' });
-
-	// filter .scenery
-	$grid.isotope({ filter: '.scenery' });
-
-	// filter .animal
-	$grid.isotope({ filter: '.animal' });
-
-	// filter .food
-	$grid.isotope({ filter: '.food' });
-
-	// show all items
-	$grid.isotope({ filter: '*' });
-*/
 	
-	
+
+
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Scroll Reveal  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -133,16 +105,44 @@ $(document).ready(function() {
 	sr.reveal('#iconThree', {delay: 600 });
 
 
+
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Icon Animate  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
     $(".socialContact .icon").hover(function(){
         $(this).animate({top: "-8px"});
     },function(){
         $(this).animate({top: "0px"});
     });
+
+
+
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*  Image Popup */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
 
 });
 
