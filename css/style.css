@@ -202,7 +202,7 @@ header .navbar {
 
 
 
-button {
+#gallery .sm {
   display: inline-block;
   border-radius: 2px;
   border: none;
@@ -219,8 +219,8 @@ button {
 
 
 
-@media (max-width: 480px){
-  .sm {
+@media (max-width: 650px){
+#gallery .sm {
     width: 40%
   }
 }
@@ -228,7 +228,7 @@ button {
 
 
   
-button:hover {
+#gallery .sm:hover {
     background-color: #4c4c4c;
     color: white;
     transition: .2s ease;
