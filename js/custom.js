@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* Backstretch  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -152,10 +152,9 @@ $(document).ready(function() {
 			duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
-
-
-
-
+	
+	
+	
 });
 
 
