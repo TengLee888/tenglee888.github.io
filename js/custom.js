@@ -3,10 +3,10 @@ $(document).ready(function() {
     /* Backstretch  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	$.backstretch([
-	    "https://tenglee888.github.io/mywebsite/photo/cappadociaWide.JPG",
-	    "https://tenglee888.github.io/mywebsite/photo/riaSunSetWide.JPG",
-	    "https://tenglee888.github.io/mywebsite/photo/mountainWide.JPG"
-	    ], 
+	    "photo/cappadociaWide.JPG",
+	    "photo/riaSunSetWide.JPG",
+	    "photo/mountainWide.JPG"
+	    ],
 	    {duration: 3000, fade: 750}
 	 );
 	    // Duration is the amount of time in between slides,
@@ -62,7 +62,7 @@ $(document).ready(function() {
 		  });
 		});
 	});
-	
+
 
 
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -123,11 +123,8 @@ $(document).ready(function() {
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
-	}); 
-	
+	});
 
-	
+
+
 });
-
-
-
